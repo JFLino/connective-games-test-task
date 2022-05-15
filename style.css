@@ -1,0 +1,116 @@
+.calculator {
+    width: 420px;
+    height: 385px;
+
+    left: 20px;
+    top: 20px;
+
+    position: absolute;
+    border: 1px solid #000000;
+}
+
+.display{
+    width: 370px;
+    height: 60px;
+    left: 25px;
+    top: 25px;
+
+    background: #F1F1F1;
+
+    position: absolute;
+    border: 1px solid #000000;
+}
+
+.display span{
+    position: absolute;
+    width: 360px;
+    height: 33px;
+    left: 5px;
+    top: 15px;
+
+    font-weight: 400;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 33px;
+
+    text-align: right;
+}
+
+.buttons button{
+    background: #F1F1F1;
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+
+.memory_buttons {
+    position: absolute;
+    display: grid;
+
+    width: 40px;
+    height: 260px;
+
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+
+    left:  25px;
+    top: 100px;
+}
+
+.state_buttons{
+    position: absolute;
+    display: grid;
+
+    width: 205px;
+    height: 40px;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+
+    left:  190px;
+    top: 100px;
+}
+
+.keyboard_buttons{
+    position: absolute;
+    display: grid;
+
+    width: 150px;
+    height: 205px;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+
+    left:  135px;
+    top: 155px;
+}
+
+.function_buttons{
+    position: absolute;
+    display: grid;
+
+    width: 95px;
+    height: 205px;
+
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+
+    left:  300px;
+    top: 155px;
+}
+
+.equal_button {
+    grid-column: 2; 
+    grid-row: 3/5;
+}
+
+#memory_display{
+    font-size: 25px;
+    position: absolute;
+    left: 450px;
+}
+
+#instruction{
+    position: absolute;
+    top: 400px;
+}
